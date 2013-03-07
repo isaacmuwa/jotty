@@ -61,6 +61,7 @@ class JottyWindow(Window):
         #write the data
         GLib.mkdir_with_parents(jotty_dir, 0o700)
         GLib.file_set_contents(filename, text)
+        self.ui.label2.set_text(title)
         
     def on_mnu_open_activate(self,widget,data=None):
         #OpenDialog instance
@@ -91,11 +92,13 @@ class JottyWindow(Window):
         #set the ui to display the string
         buff=self.ui.textview1.get_buffer()
         buff.set_text(text)
+        self.ui.label2.set_text(filename)
         
     def on_mnu_new_activate(self,widget,data=None):
         #self.ui.entry1.set_text("Note title")
         buff=self.ui.textview1.get_buffer()
         buff.set_text("")
+        self.ui.label2.set_text("Status Area")
         
         
         
