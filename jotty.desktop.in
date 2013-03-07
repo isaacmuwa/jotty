@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Jotty
+_Comment=Jotty application
+Categories=GNOME;Utility;
+Exec=jotty
+Icon=jotty
+Terminal=false
+Type=Application
