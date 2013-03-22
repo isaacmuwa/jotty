@@ -11,5 +11,6 @@ This is what you'll need:
 -Quickly
 Quickly uses Gedit by default.
 The site gives you all the details to get started.
+To run the app cd into the root directory and run the command "quickly run"
 Happy coding! 
 
